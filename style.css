@@ -1,0 +1,195 @@
+/*#fef760,#c0c0c0,#5e5e5e,#121212*/
+.body-grid{
+     
+    display:grid;
+    background-color:#000000;
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "header "
+    "content"
+    "footer";
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+/*fuentes*/
+.textMenu a, .footer{
+    font-family:'Libre Caslon Text', serif;
+    font-size: 20px;
+}
+.footer p{
+    font-size: 18px;
+    color:white;
+}
+/*fin fuentes*/
+
+/*header*/
+header{
+    
+    grid-area: header ;
+    background-color:#121212;
+    z-index: 1;
+}
+
+#contentHeader{
+    
+    display:grid;
+    height: 100%;
+    line-height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "logoHeader navDiv"
+    ;
+    
+}
+
+#logoHeader{
+     
+    margin: 3% 2%;
+    
+    
+    grid-area: logoHeader ;  
+    height: 50%;
+    width: 45%;
+    background-color: white;
+
+
+}
+#logoImg{
+    
+    height: 100%;
+    width: 100%;
+}
+
+#navDiv{
+
+    grid-area: navDiv ;
+    
+    height: 100%;
+    width: 100%;
+  
+    
+    
+}
+
+
+nav ul   {
+    
+    float:right;
+    
+    display: flex;
+ }
+nav ul li {
+   list-style: none;
+}
+nav ul li a{
+
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*fin header*/
+
+/*content*/
+.grid{
+     
+  
+    border-radius: 4px;
+
+}
+.content{
+    
+    
+    grid-area: content ;
+    background-color:rgb(87, 87, 87);
+}
+/*End content*/
+/*footer*/
+.footer  {
+    display:grid;
+    grid-area: footer ;
+    background-color: rgb(0, 0, 0);
+    grid-template-areas:
+    "footerOne footerTwo"
+    ;
+}
+.footerOne{
+    grid-area: footerOne ;
+    float: left;
+}
+.footerTwo{
+    grid-area: footerTwo ;
+    
+}
+.footerTwo p{
+    
+    float: right;
+}
+/*End footer*/
+/*centrado*/
+.footer , .content, header{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*End centrado*/
+/*Resposive general*/
+@media (max-width:600px){
+
+    .textMenu{
+        display: none;
+    }  
+    .grid-container{
+         
+        grid-template-areas:
+        "header" 20%
+        "content" 60%
+        "footer" 20%;
+    }
+}
+@media (max-width:900px){
+
+    .textMenu{
+        display: none;
+    }
+    .grid-container{
+         
+        grid-template-areas:
+        "header" 20%
+        "content" 60%
+        "footer" 20%;
+    }
+}
+
+/*End Resposive general*/
+
+@media (max-width:600px){
+
+     
+    .footer{
+         
+        grid-template-areas:
+        "footerOne"
+        "footerTwo"  
+        
+    }
+}
+@media (max-width:900px){
+
+    
+    .footerTwo p{
+    
+        float: left;
+    }
+    .footer{
+         
+        grid-template-areas:
+        "footerOne"
+        "footerTwo" 
+        
+    }
+}
