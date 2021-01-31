@@ -43,12 +43,12 @@
         const currentScroll=window.pageYOffset;
         if (currentScroll==0) {
             header.style=null;
-            header.style.transition="all 1s ease";
+           
             
         } else {
             header.style.position="fixed";
             header.style.background="#0c0c22";
-            header.style.transition="all 1s ease";
+            
         }
 
     });
