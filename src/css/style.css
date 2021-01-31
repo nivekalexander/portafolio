@@ -35,7 +35,7 @@ header{
 
     
      
-    
+    transition: all 1s ease;
     
     width: 100%;
     padding-top:2%;
