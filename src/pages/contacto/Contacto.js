@@ -1,6 +1,6 @@
 import React from "react";
-import git from "../img/github.png";
-import facebook from "../img/facebook.png";
+import git from "./data/github.png";
+import facebook from "./data/facebook.png";
 
 class  Contacto extends React.Component{
 

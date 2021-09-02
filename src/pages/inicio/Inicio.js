@@ -1,16 +1,16 @@
 import React from 'react';
 
-import fotoPerfil from "../img/fotoPerfil.png";
+import fotoPerfil from "./data/fotoPerfil.png";
 
-import logoHtml from "../img/iconos/html.svg";
-import logoCss from "../img/iconos/css.svg";
-import logoBootstrap from "../img/iconos/bootstrap.svg";
-import logoJavaScript from "../img/iconos/javascript.svg";
-import logoJquery from "../img/iconos/jquery.svg";
-import logoPhp from "../img/iconos/php.svg";
-import logoMySql from "../img/iconos/mysql.svg";
-import logoGit from "../img/iconos/git.svg";
-import fotoPerfil2 from "../img/zombie.gif";
+import logoHtml from "./data/iconos/html.svg";
+import logoCss from "./data/iconos/css.svg";
+import logoBootstrap from "./data/iconos/bootstrap.svg";
+import logoJavaScript from "./data/iconos/javascript.svg";
+import logoJquery from "./data/iconos/jquery.svg";
+import logoPhp from "./data/iconos/php.svg";
+import logoMySql from "./data/iconos/mysql.svg";
+import logoGit from "./data/iconos/git.svg";
+import fotoPerfil2 from "./data/zombie.gif";
 
 class  Inicio extends React.Component{
 

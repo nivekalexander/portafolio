@@ -1,16 +1,16 @@
 import React from 'react';
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
 
-import Header from '../parts/Header.js';
-import Footer from '../parts/Footer.js';
+import Header from './header/Header.js';
+import Footer from './footer/Footer.js';
 
 
-import Ruta1 from '../pages/Inicio.js';
-import Ruta2 from '../pages/Portafolio.js';
-import Ruta3 from '../pages/Laboratorio.js';
-import Ruta4 from '../pages/Contacto.js';
+import Ruta1 from '../pages/inicio/Inicio.js';
+import Ruta2 from '../pages/portafolio/Portafolio.js';
+import Ruta3 from '../pages/laboratorio/Laboratorio.js';
+import Ruta4 from '../pages/contacto/Contacto.js';
 
-import NotFound from '../pages/NotFound.js'
+import NotFound from '../pages/notFound/NotFound.js'
 
 class App extends React.Component{
 
