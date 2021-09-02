@@ -3,6 +3,8 @@ import logoMenu from  "./data/menu.svg" ;
 
 import {Link} from "react-router-dom";
 
+import "./animaciones.css";
+import "./style.css";
 class Header extends React.Component{
 
     render(){

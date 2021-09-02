@@ -1,0 +1,192 @@
+
+/*header*/
+header{
+    transition: all 1s ease;  
+    width: 100%;
+    padding-top:2%;
+    grid-area: header ;
+    padding-bottom:2%;  
+}
+nav {
+    grid-row: auto ;
+    grid-column: auto ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+nav #iconoHeader{
+    display:none;
+    cursor:pointer;
+    align-items: center;
+    height:100%;
+    
+}
+nav #iconoHeader img{
+    display: none;   
+    color: steelblue;
+    background: #32314e;
+    padding: 5px;   
+    margin-right:40px;
+    border-radius: 8%;
+    display: flex;
+    height:50px;
+    z-index: 100;
+}
+.opcionesMenu{
+        margin-right: 10%; 
+        display:flex;
+        height:100%;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+        float:right;
+}
+.opcionesMenu a{
+    border-top: 1px solid transparent;
+    border-bottom:1px solid transparent ;
+    padding:4px 0;
+    transition: 0.7 ease-out;
+    text-decoration: none;
+}
+.opcionesMenu a:hover{
+    border-top: 1px solid white;
+    border-bottom:1px solid white ;
+}
+.aux{   
+    height: inherit;
+    align-items: center;
+    margin-left: 6%; 
+}
+#logoHeader{
+    margin-left: 10%; 
+    width: 115px;
+    height: 30px;
+    background-color: white;
+    background-image: url("./data/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+/*fin header*/
+/*colores*/
+header{
+
+    background-color: #21213b;
+}
+
+@media only screen  
+and (min-width:600px) and (max-width:700px){
+    nav #logoHeader{
+        margin-top:2.5%;
+        
+    }
+    nav #iconoHeader{
+        display: flex;
+        display: inline-block;
+        z-index: 999;
+        
+        
+    }
+    
+    .opcionesMenu{
+        transition: all 1s ease;
+        position:fixed;
+        height: 102vh;
+        width: 100%;
+        right:0;
+        flex-direction: column;
+        margin-top: -4%;
+        margin-right: 0;
+        font-size: 40px;
+    }
+    .uno{
+        background:#0c0c22;
+       -webkit-clip-path: circle(0.0% at 110% 0);
+        clip-path: circle(0.0% at 110% 0);
+    }
+    .dos{
+        background:#0c0c22;
+          -webkit-clip-path: circle(150% at 90% 0);
+        clip-path: circle(160% at 100% 0);
+    }
+
+}
+@media only screen  
+and (min-width:400px) and (max-width:600px){
+    nav #logoHeader{
+        margin-top:3.5%;
+        
+    }
+    nav #iconoHeader{
+        display: flex;
+        display: inline-block;
+        z-index: 999;
+        
+        
+    }
+    
+    .opcionesMenu{
+        transition: all 1s ease;
+        position:fixed;
+        height: 102vh;
+        width: 100%;
+        right:0;
+        flex-direction: column;
+        margin-top: -4%;
+        margin-right: 0;
+        font-size: 40px;
+    }
+    .uno{
+        background:#0c0c22;
+       -webkit-clip-path: circle(0.0% at 110% 0);
+        clip-path: circle(0.0% at 110% 0);
+    }
+    .dos{
+        background:#0c0c22;
+          -webkit-clip-path: circle(150% at 90% 0);
+        clip-path: circle(160% at 100% 0);
+    }
+    
+}
+@media only screen  
+and (min-width:100px) and (max-width:400px){
+    nav #logoHeader{
+        margin-top: 4%;
+    }
+    nav #iconoHeader{
+        display: flex;
+        display: inline-block;
+        z-index: 999;
+
+        
+    }
+    
+    .stop-scrolling { 
+        height: 100%; 
+        overflow: hidden; 
+    }
+    .opcionesMenu{
+        transition: all 1s ease;
+        position:fixed;
+        height: 102vh;
+        width: 100%;
+        right:0;
+        flex-direction: column;
+        margin-top: -4%;
+        margin-right: 0;
+        font-size: 40px;
+        
+    }
+    .uno{
+       
+        background:#0c0c22;
+       -webkit-clip-path: circle(0.0% at 110% 0);
+        clip-path: circle(0.0% at 110% 0);
+    }
+    .dos{
+        
+        background:#0c0c22;
+          -webkit-clip-path: circle(150% at 90% 0);
+        clip-path: circle(160% at 100% 0);
+    }
+}

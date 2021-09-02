@@ -12,6 +12,7 @@ import logoMySql from "./data/iconos/mysql.svg";
 import logoGit from "./data/iconos/git.svg";
 import fotoPerfil2 from "./data/zombie.gif";
 
+import "./style.css";
 class  Inicio extends React.Component{
 
     render(){

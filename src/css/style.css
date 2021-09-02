@@ -1,6 +1,5 @@
 /*#fef760,#c0c0c0,#5e5e5e,#121212*/
-.body-grid{
-     
+.body-grid{   
     display:grid;
     background-color:#21213b;
     margin:0;
@@ -16,110 +15,12 @@ html{
     height: 100%;
     width: 100%;
 }
-/*fuentes*/
-.textMenu a, .footer{
+/*fuentes
+.textMenu a{
     font-family:'Libre Caslon Text', serif;
     font-size: 20px;
 }
-.footer p{
-    font-size: 18px;
-    color:white;
-}
-/*fin fuentes*/
-
-/*header*/
-header{
-
-    
-     
-    transition: all 1s ease;
-    
-    width: 100%;
-    padding-top:2%;
-    grid-area: header ;
-    padding-bottom:2%;
-   
-}
-
-nav {
-
-    grid-row: auto ;
-    grid-column: auto ;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-}
-nav #iconoHeader{
-
-    display:none;
-    cursor:pointer;
-    align-items: center;
-    height:100%;
-    
-}
-
-nav #iconoHeader img{
-    display: none;
-    
-    color: steelblue;
-    background: #32314e;
-    padding: 5px;
-    
-    margin-right:40px;
-    border-radius: 8%;
-    display: flex;
-    height:50px;
-    z-index: 100;
-}
-
-.opcionesMenu{
-        margin-right: 10%; 
-        display:flex;
-        height:100%;
-        width: 40%;
-        justify-content: space-around;
-        align-items: center;
-        float:right;
-
-}
-.opcionesMenu a{
-
-    border-top: 1px solid transparent;
-    border-bottom:1px solid transparent ;
-    padding:4px 0;
-    transition: 0.7 ease-out;
-    text-decoration: none;
-}
-.opcionesMenu a:hover{
-
-    border-top: 1px solid white;
-    border-bottom:1px solid white ;
-}
-.aux{
-    
-    height: inherit;
-   align-items: center;
-   margin-left: 6%; 
-
-}
-#logoHeader{
-
-    margin-left: 10%; 
-    width: 115px;
-    height: 30px;
-    background-color: white;
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-     background-size: cover;
-    
-}
-
-
-
-
-/*fin header*/
+fin fuentes*/
 
 /*content*/
 
@@ -135,235 +36,41 @@ nav #iconoHeader img{
     
 }
 /*End content*/
-#contacto{
-padding-bottom: 5%;
-    display: grid;
-    grid-template-rows: "auto auto auto";
-    grid-template-columns: "auto auto ";
 
-}
-
-#contacto .tituloSection {
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-.sendEmail{
-    
-    align-items: left;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: inline-grid;
-}
-.sendEmail a{
-    
-    margin-top: 5%;
-}
-.sendEmail #mensaje{
-
-    width: 50%;
-}
-.socialRed{
-    grid-column: 2/4;
-    grid-row: 2/3;
-    display: flex;
-     
-    justify-content: space-around;
-    align-items: center;
-    float:right;
-
-}
-
-
-
-.footerIcons img{
-    
-    padding-right: 20px;
-    width: 50px;
-    height: 50px;
-
-}
-
-/*footer*/
-.footer  {
-    display:grid;
-    grid-area: footer ;
-    grid-template-areas:
-    "footerOne footerTwo"
-    ;
-}
-.footerOne{
-    grid-area: footerOne ;
-    float: left;
-}
-.footerTwo{
-    grid-area: footerTwo ;
-    
-}
-.footerTwo p{
-    
-    float: right;
-}
-/*End footer*/
 /*centrado*/
-.footer , .content{
+.content{
     padding-left: 10%;
     padding-right: 10%;
 }
 /*End centrado*/
 
 /*colores*/
-.footer{
- background-color: #0c0c22;
-}
-header{
 
-    background-color: #21213b;
-}
 
 a,p{
     color: #c4c0e0;
 }
-#inicio h1{
-    color: #aaa6ca;
-}
+
 /*End colores*/
-/*figuras*/
-
-.circulo {
-    
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-     
-    
-    
-}
-/*End figuras*/
-
-.circuloPerfil img{
-    margin-left: 10%;
-    border:20px solid #4c4c6b ;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-    
-}
-.botonSubmit{
-    border-radius: 5%;
-}
-
-.fondoPerfil{
-
-    width: 50%;
-    height: 80%;
-    margin-top: 12%;
-    margin-bottom: 12%;
-    margin-left: 60%;
-    display: flex;
-    align-items: center;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-    background-color: #32314e;
-
-     grid-column:1/3;
-     grid-row:1/2;
-    
-    
-}
-.perfil{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    text-align:left;
-    width: 80%;
-    grid-row:1/2;
-    grid-column:4/10;
-}
-.queHago{
-    width: 100%;
-    height: 100%;
-    grid-column:1/6;
-    grid-row:2/4;
-}
-.queHago h1,.queHago h4{
-
-    color:#c4c0e0 ;
-
-}
-.queHagoFoto{
-    background-size: 100%;
-    height: 60%;
-    width: 60%;
-    grid-column:6/10;
-    grid-row:2/4;
-    
-}
-
-.zombie{
-    margin-left: 20%;
-    border:10px solid #4c4c6b ;
-    height: 100%;
-    width: 100%;
-    
-}
-
-.icons{
-    margin-right: 1%;
-    max-width: 45px; 
-    max-height: 45px;
-    min-width: 45px; 
-    min-height: 45px;
-}
 
 /*section*/
-#inicio{
-    
-    display: grid;
-    grid-template-rows: auto auto;
-    
-    
-}
 
-#portafolio{
-     
-    display: grid;
-    grid-template-rows: auto auto;
-}
 
-#laboratorio{
-    
-    display: grid;
-    grid-template-rows: auto auto;
-}
-#contacto{
-     
-}
+
 .notSection , .yesSection{
-
     grid-area: contentenido;
-    display: grid;
-     
+    display: grid; 
     grid-template-columns: auto auto;
     grid-template-rows:  auto auto ;  
     height: 80%;
-    width: 100%;
-    
-     
-   
-   
-   
-    
+    width: 100%;   
 }
-
 .headerInfo{
    border-top-left-radius: 5%;
    border-bottom-left-radius: 5%;
     grid-column: 1/2;
     grid-row: 1/3;
-
 }
- 
 .headerInfo img{
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -397,93 +104,11 @@ a,p{
 
 
 
-.tituloSection{
-    font-size: 200%;
-    text-shadow: 5px 5px 6px rgb(0, 0, 0);
-}
+
 /*Resposive general*/
 
 @media only screen  
 and (min-width:600px) and (max-width:700px){
-    nav #logoHeader{
-        margin-top:2.5%;
-        
-    }
-    nav #iconoHeader{
-        display: flex;
-        display: inline-block;
-        z-index: 999;
-        
-        
-    }
-    
-    .opcionesMenu{
-        transition: all 1s ease;
-        position:fixed;
-        height: 102vh;
-        width: 100%;
-        right:0;
-        flex-direction: column;
-        margin-top: -4%;
-        margin-right: 0;
-        font-size: 40px;
-    }
-    .uno{
-        background:#0c0c22;
-       -webkit-clip-path: circle(0.0% at 110% 0);
-        clip-path: circle(0.0% at 110% 0);
-    }
-    .dos{
-        background:#0c0c22;
-          -webkit-clip-path: circle(150% at 90% 0);
-        clip-path: circle(160% at 100% 0);
-    }
-    .tituloSection{
-        font-size: 100%;
-    }
-      
-   
-    #inicio{
-        grid-template-rows: auto auto auto auto;
-    }
-    .fondoPerfil{
-        margin-left: 0;
-        width:100%;
-        grid-row: 1/2;
-        grid-column: auto;
-    }
-    .circuloPerfil img{
-        width: 50%;
-        margin-left: 20%;
-        margin-right: 20%;
-
-    }
-    .perfil{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
-        grid-row: 2/3;
-        grid-column: auto;
-    }
-    .queHago{
-        grid-row: 4/5;
-        grid-column: auto;
-    }
-    .queHagoFoto{
-        grid-row: 3/4;
-        grid-column: auto;
-    }
-    .footerTwo p{
-    
-        float: left;
-    }
-    .footer{
-         
-        grid-template-areas:
-        "footerOne"
-        "footerTwo"  
-        
-    }
 
     .notSection , .yesSection{
 
@@ -520,106 +145,10 @@ and (min-width:600px) and (max-width:700px){
         grid-column: 1/2;
 
     }
-    #contacto .tituloSection {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .sendEmail{
-        
-       
-        grid-column: 1/4;
-        grid-row: 2/3;
-      
-    }
-    
-    .socialRed{
-        grid-column: 1/4;
-        grid-row: 3/4;
-    }
-    
 }
-
 @media only screen  
 and (min-width:400px) and (max-width:600px){
-    nav #logoHeader{
-        margin-top:3.5%;
-        
-    }
-    nav #iconoHeader{
-        display: flex;
-        display: inline-block;
-        z-index: 999;
-        
-        
-    }
-    
-    .opcionesMenu{
-        transition: all 1s ease;
-        position:fixed;
-        height: 102vh;
-        width: 100%;
-        right:0;
-        flex-direction: column;
-        margin-top: -4%;
-        margin-right: 0;
-        font-size: 40px;
-    }
-    .uno{
-        background:#0c0c22;
-       -webkit-clip-path: circle(0.0% at 110% 0);
-        clip-path: circle(0.0% at 110% 0);
-    }
-    .dos{
-        background:#0c0c22;
-          -webkit-clip-path: circle(150% at 90% 0);
-        clip-path: circle(160% at 100% 0);
-    }
-    .tituloSection{
-        font-size: 100%;
-    }
-      
-    
-    #inicio{
-        grid-template-rows: auto auto auto auto;
-    }
-    .fondoPerfil{
-        margin-left: 0;
-        width:100%;
-        grid-row: 1/2;
-        grid-column: auto;
-    }
-    .circuloPerfil img{
-        width: 50%;
-        margin-left: 20%;
-        margin-right: 20%;
 
-    }
-    .perfil{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
-        grid-row: 2/3;
-        grid-column: auto;
-    }
-    .queHago{
-        grid-row: 4/5;
-        grid-column: auto;
-    }
-    .queHagoFoto{
-        grid-row: 3/4;
-        grid-column: auto;
-    }
-    .footerTwo p{
-    
-        float: left;
-    }
-    .footer{
-         
-        grid-template-areas:
-        "footerOne"
-        "footerTwo"  
-        
-    }
     .notSection , .yesSection{
 
         display: grid;
@@ -655,119 +184,11 @@ and (min-width:400px) and (max-width:600px){
         grid-column: 1/2;
 
     }
-    #contacto .tituloSection {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .sendEmail{
-        
-       
-        grid-column: 1/4;
-        grid-row: 2/3;
-      
-    }
     
-    .socialRed{
-        grid-column: 1/4;
-        grid-row: 3/4;
-    }
 }
-
-
-
 @media only screen  
 and (min-width:100px) and (max-width:400px){
-    nav #logoHeader{
-        margin-top: 4%;
-    }
-    nav #iconoHeader{
-        display: flex;
-        display: inline-block;
-        z-index: 999;
-
-        
-    }
-    
-    .stop-scrolling { 
-        height: 100%; 
-        overflow: hidden; 
-    }
-    .opcionesMenu{
-        transition: all 1s ease;
-        position:fixed;
-        height: 102vh;
-        width: 100%;
-        right:0;
-        flex-direction: column;
-        margin-top: -4%;
-        margin-right: 0;
-        font-size: 40px;
-        
-    }
-    .uno{
-       
-        background:#0c0c22;
-       -webkit-clip-path: circle(0.0% at 110% 0);
-        clip-path: circle(0.0% at 110% 0);
-    }
-    .dos{
-        
-        background:#0c0c22;
-          -webkit-clip-path: circle(150% at 90% 0);
-        clip-path: circle(160% at 100% 0);
-    }
-
-    
-   
-    .tituloSection{
-        font-size: 100%;
-    }
-    
-   
-    #inicio{
-        grid-template-rows: auto auto auto auto;
-    }
-      .fondoPerfil{
-        margin-left: 0;
-        width:100%;
-        grid-row: 1/2;
-        grid-column: auto;
-    }
-    .circuloPerfil img{
-        width: 50%;
-        margin-left: 20%;
-        margin-right: 20%;
-
-    }
-    .perfil{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
-        grid-row: 2/3;
-        grid-column: auto;
-    }
-    .queHago{
-        grid-row: 4/5;
-        grid-column: auto;
-    }
-    .queHagoFoto{
-        grid-row: 3/4;
-        grid-column: auto;
-    }
-
-    .footerTwo p{
-    
-        float: left;
-    }
-    .footer{
-         
-        grid-template-areas:
-        "footerOne"
-        "footerTwo" 
-        
-    }
-  .notSection , .yesSection{
-
+    .notSection , .yesSection{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows:  auto auto auto ;  
@@ -775,49 +196,22 @@ and (min-width:100px) and (max-width:400px){
     }
 
     .headerInfo{
-
- 
          grid-column: 1/2;
          grid-row: 1/2;
-     
-     }
-     .headerInfo img{
-
+    }
+    .headerInfo img{
         border-top-right-radius: 5%;
         border-bottom-left-radius: 0%;
-    
     }
-    .descripInfo{
-       
+    .descripInfo{     
         grid-row:2/3;
         grid-column: 1/2 ;
-       
     }
     .lenguajesInfo{
-
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
         grid-row: 3/4;
         grid-column: 1/2;
-
-    }
-    #contacto .tituloSection {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .sendEmail{
-        
-       
-        grid-column: 1/4;
-        grid-row: 2/3;
-      
-    }
-    
-    .socialRed{
-        padding-top:10%;
-        padding-bottom: 10%;
-        grid-column: 1/4;
-        grid-row: 3/4;
     }
 }
 

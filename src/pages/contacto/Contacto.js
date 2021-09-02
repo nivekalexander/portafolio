@@ -2,6 +2,7 @@ import React from "react";
 import git from "./data/github.png";
 import facebook from "./data/facebook.png";
 
+import "./style.css";
 class  Contacto extends React.Component{
 
     render(){

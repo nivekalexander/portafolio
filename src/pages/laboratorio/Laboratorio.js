@@ -1,5 +1,6 @@
 import React from "react"
 
+import "./style.css";
 class Laboratorio extends React.Component{
 
     render(){
